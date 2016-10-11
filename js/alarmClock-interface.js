@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     //formatted time to compare set alarm time to current time
     formattedTime = new moment(input, 'HH:mm:ss').format();
+    console.log(formattedTime);
     //get current time in year, month, date + time format
     currentTime = new moment().format();
 
@@ -36,6 +37,7 @@ $(document).ready(function(){
 
   $("#snoozeOptions").submit(function(event){
     event.preventDefault();
+    newAlarm.stop();
     var snoozeTime = parseInt($('#snoozeTime').val());
     var hitSnooze = new moment().add(snoozeTime, 'minutes');
     var formattedSnooze = hitSnooze.format('hh:mm:ss');
