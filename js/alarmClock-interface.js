@@ -17,13 +17,13 @@ $(document).ready(function(){
     formattedTime = new moment(input, 'HH:mm:ss').format();
     //get current time in year, month, date + time format
     currentTime = new moment().format();
-newAlarm.alert();
-    // setInterval(function(){
-    //   console.log(formattedTime);
-    //   if(formattedTime === new moment().format()){
-    //     newAlarm.alert();
-    //   }
-    // }, 1000);
+
+    setInterval(function(){
+      console.log(formattedTime);
+      if(formattedTime === new moment().format()){
+        newAlarm.alert();
+      }
+    }, 1000);
 
 
   });
