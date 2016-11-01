@@ -1,0 +1,29 @@
+.clock{
+  border: 2px solid white;
+  width: 600px;
+  margin: 0 auto;
+}
+h3.clock {
+  font-size: 100px;
+  text-align: center;
+}
+form{
+  display: table;
+  margin: 0 auto;
+}
+label, input{
+  display: table-cell;
+  width: 150px;
+}
+.container{
+  margin-top: 300px;
+}
+.btn{
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+}
+body{
+  background-color: black;
+  color: white;
+}
